@@ -1,13 +1,9 @@
-fastapi>=0.68.0
-uvicorn>=0.15.0
-python-multipart>=0.0.5
-transformers>=4.11.3
-pytesseract>=0.3.8
-opencv-python-headless>=4.5.3.56
-torch>=1.9.0
-python-dateutil>=2.8.2
+fastapi
+uvicorn
+pytesseract
 Pillow
 opencv-python-headless
 google-cloud-documentai
 google-generativeai
 orjson
+python-multipart

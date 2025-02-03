@@ -10,6 +10,9 @@ import pytesseract
 import os
 import shutil
 
+import uvicorn
+# pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 app = FastAPI()
 
 if not os.path.exists("uploads"):
@@ -65,3 +68,8 @@ async def create_upload_file(file: UploadFile = File(...)):
     invoice_data = extract_invoice_info(extracted_text)
     print(invoice_data)
     return JSONResponse(content=invoice_data, status_code=200)
+
+
+# if __name__ == "__main__":
+#     port = int(os.environ.get("PORT", 8000))
+#     uvicorn.run("main:app", host="localhost", port=port, reload=False)
