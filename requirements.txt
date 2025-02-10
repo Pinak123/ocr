@@ -7,3 +7,5 @@ google-cloud-documentai
 google-generativeai
 orjson
 python-multipart
+pymongo
+json_repair
